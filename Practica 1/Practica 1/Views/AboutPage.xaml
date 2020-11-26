@@ -25,12 +25,27 @@
                 <Entry Text=""  Placeholder= "Username" />
               
                 <Entry Text=""  Placeholder= "Password"/>
-               
-      
-                <Button Margin="0,10,0,0" Text="Login"
-                        Command="{Binding OpenWebCommand}"
-                        BackgroundColor="Red"
-                        TextColor="White" />
+
+
+                <Label>
+
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <Span Text="Registro" TextColor ="Red"  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OnLoginCommand}" />
+
+                                </Span.GestureRecognizers>
+
+                            </Span>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
                 <Label>
                     
                     <Label.FormattedText>

@@ -13,6 +13,7 @@ namespace Practica_1
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

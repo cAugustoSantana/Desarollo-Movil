@@ -21,7 +21,7 @@ namespace Practica_1.ViewModels
         private async void OnLoginCommand(object obj)
         {
 
-            await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
+            await Shell.Current.GoToAsync("//HomePage");
         }
         private async void OnRegisterCommand(object obj)
         {
@@ -29,6 +29,7 @@ namespace Practica_1.ViewModels
             await Shell.Current.GoToAsync($"//{nameof(Registration)}");
         }
 
+        
         public Command LoginCommand { get; }
         public Command RegisterCommand { get; }
         public ICommand OpenWebCommand { get; }
