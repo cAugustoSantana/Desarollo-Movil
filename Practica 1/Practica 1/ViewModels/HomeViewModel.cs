@@ -28,6 +28,8 @@ namespace Practica_1.ViewModels
             FineDiningOption.Title = "Fine Dining";
             FastFoodsOption.Title = "Fast Foods";
             CafesOption.Title = "Cafes";
+            FeaturedFoodsOption.Title = "Featured Foods";
+            NearbyOption.Title = "Nearby";
 
 
 

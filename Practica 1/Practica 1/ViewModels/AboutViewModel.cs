@@ -21,12 +21,12 @@ namespace Practica_1.ViewModels
         private async void OnLoginCommand(object obj)
         {
 
-            await Shell.Current.GoToAsync("//HomePage");
+            await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
         }
         private async void OnRegisterCommand(object obj)
         {
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(Registration)}");
+            await Shell.Current.GoToAsync("//Registration");
         }
 
         

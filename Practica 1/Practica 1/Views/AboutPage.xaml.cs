@@ -10,6 +10,15 @@ namespace Practica_1.Views
         public AboutPage()
         {
             InitializeComponent();
+            btnToLoginPage.Clicked += (sender, e) =>
+            {
+
+                Navigation.PushAsync(new HomePage());
+            };
+            btnToRegisterPage.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new Registration());
+            };  
         }
     }
 }

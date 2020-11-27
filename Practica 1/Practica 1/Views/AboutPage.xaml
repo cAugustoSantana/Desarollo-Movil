@@ -26,45 +26,8 @@
               
                 <Entry Text=""  Placeholder= "Password"/>
 
-
-                <Label>
-
-                    <Label.FormattedText>
-
-                        <FormattedString>
-
-                            <Span Text="Registro" TextColor ="Red"  TextDecorations="Underline">
-                                <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding OnLoginCommand}" />
-
-                                </Span.GestureRecognizers>
-
-                            </Span>
-
-                        </FormattedString>
-
-                    </Label.FormattedText>
-
-                </Label>
-                <Label>
-                    
-                    <Label.FormattedText>
-                        
-                        <FormattedString>
-
-                            <Span Text="Registro" TextColor ="Red"  TextDecorations="Underline">
-                                <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding RegisterCommand}" />
-
-                                </Span.GestureRecognizers>
-                                
-                            </Span>
-                            
-                        </FormattedString>
-                        
-                    </Label.FormattedText>
-
-                </Label>
+                <Button x:Name="btnToLoginPage" Text="Login"></Button>
+                <Button x:Name="btnToRegisterPage" Text="Sign up"></Button>
             </StackLayout>
         </ScrollView>
     </Grid>
