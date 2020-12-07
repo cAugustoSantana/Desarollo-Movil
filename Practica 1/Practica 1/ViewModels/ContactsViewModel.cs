@@ -10,16 +10,6 @@ namespace Practica_1.ViewModels
 {
    public  class ContactsViewModel : BaseViewModel
     {
-        private Contact _selectedContact;
-
-        public ObservableCollection<Contact> Contacts { get; }
-
-        public Command LoadContactsCommand { get; }
-
-        public Command AddContactCommand { get; }
-
-        public Command<Contact> ContactTapped { get; }
-
         public ContactsViewModel()
         {
             Title = "Agenda";
@@ -30,6 +20,17 @@ namespace Practica_1.ViewModels
 
             AddContactCommand = new Command(OnAddContact);
         }
+        private Contact _selectedContact;
+
+        public ObservableCollection<Contact> Contacts { get; }
+
+        public Command LoadContactsCommand { get; }
+
+        public Command AddContactCommand { get; }
+
+        public Command<Contact> ContactTapped { get; }
+
+        
         async Task ExecuteLoadContactsCommand()
         {
             IsBusy = true;

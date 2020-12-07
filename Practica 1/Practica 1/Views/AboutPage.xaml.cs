@@ -13,7 +13,7 @@ namespace Practica_1.Views
             btnToLoginPage.Clicked += (sender, e) =>
             {
 
-                Navigation.PushAsync(new HomePage());
+                Navigation.PushAsync(new ItemsPage());
             };
             btnToRegisterPage.Clicked += (sender, e) =>
             {

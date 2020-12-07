@@ -4,7 +4,7 @@
              x:Class="Practica_1.Views.ContactsPage"
              Title="{Binding Title}"
              xmlns:local="clr-namespace:Practica_1.ViewModels"
-             xmlns:model="clr-namespace: Practica_1.Models"
+             xmlns:model="clr-namespace:Practica_1.Models"
              x:Name="BrowseContactsPage">
 
     <ContentPage.ToolbarItems>
