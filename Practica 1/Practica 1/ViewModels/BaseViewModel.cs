@@ -11,6 +11,7 @@ namespace Practica_1.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStoreContacts<Contact> DataStoreContacts => DependencyService.Get<IDataStoreContacts<Contact>>();
 
         bool isBusy = false;
         public bool IsBusy
