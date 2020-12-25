@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_1.Views.OrientationPage">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Device Orientation">
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="Device Orientation"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Button Text="Get Device Orientation"
+                  Clicked="OnGetDeviceOrientatcionButtonClicked"/>
+            <Label x:Name="orientationLabel"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+  <ContentPage Title="Tab 2" />
+  <ContentPage Title="Tab 3" />
+</TabbedPage>

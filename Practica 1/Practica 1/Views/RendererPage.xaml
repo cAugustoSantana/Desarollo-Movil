@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Practica1;assembly=CustomRenderers" xmlns:local1="clr-namespace:Practica_1.CustomRenderers"
+    x:Class="Practica1.Views.RendererPage.Xaml">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Hello, Custom Renderer!" />
+        <local1:MyEntry Text="In Shared Code" />
+    </StackLayout>
+</ContentPage>

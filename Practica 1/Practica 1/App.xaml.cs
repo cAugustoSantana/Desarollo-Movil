@@ -4,6 +4,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace Practica_1
 {
     public partial class App : Application
@@ -14,7 +15,7 @@ namespace Practica_1
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage(new AboutPage());
+            MainPage = new NavigationPage(new RendererPage());
         }
 
         protected override void OnStart()

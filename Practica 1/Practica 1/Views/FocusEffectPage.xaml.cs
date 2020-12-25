@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Practica_1.ViewModels;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Practica_1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LeaguePage : ContentPage
+    public partial class FocusEffectPage : ContentPage
     {
-        public LeaguePage()
+        public FocusEffectPage()
         {
             InitializeComponent();
-            BindingContext = new LeagueViewModel();
-          
         }
     }
 }
